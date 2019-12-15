@@ -26,7 +26,7 @@ extension SwiftyFaker {
             self.model = try BookModel.load()
         }
         
-        func title: String {
+        func title() -> String {
             return model.title.random()
         }
         
