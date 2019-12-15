@@ -26,20 +26,20 @@ extension SwiftyFaker {
             self.model = try BookModel.load()
         }
         
-        var title: String {
+        func title: String {
             return model.title.random()
         }
         
         // TODO: how to handle the error handling better
-        var author: String {
+        func author() -> String {
             return try! Name().name
         }
         
-        var publisher: String {
+        func publisher() -> String {
             return model.publisher.random()
         }
         
-        var genre: String {
+        func genre() -> String {
             return model.genre.random()
         }
     }

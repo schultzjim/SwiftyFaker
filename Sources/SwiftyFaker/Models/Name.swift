@@ -51,43 +51,43 @@ extension SwiftyFaker {
             self.model = try NameModel.load()
         }
         
-        var name: String {
+        func name() -> String {
             return model.names.random()
         }
         
-        var nameWithMiddle: String {
+        func nameWithMiddle() -> String {
             return model.namesWithMiddle.random()
         }
         
-        var firstName: String {
+        func firstName() -> String {
             return model.firstName.random()
         }
         
-        var maleFirstName: String {
+        func maleFirstName() -> String {
             return model.maleFirstName.random()
         }
         
-        var masculineName: String {
+        func masculineName() -> String {
             return maleFirstName
         }
         
-        var femaleFirstName: String {
+        func femaleFirstName() -> String {
             return model.femaleFirstname.random()
         }
         
-        var feminineName: String {
+        func feminineName() -> String {
             return femaleFirstName
         }
         
-        var lastName: String {
+        func lastName() -> String {
             return model.lastName.random()
         }
         
-        var prefix: String {
+        func prefix() -> String {
             return model.prefix.random()
         }
         
-        var suffix: String {
+        func suffix() -> String {
             return model.suffix.random()
         }
     }
