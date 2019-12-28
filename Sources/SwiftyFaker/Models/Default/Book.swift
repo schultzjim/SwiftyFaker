@@ -32,7 +32,7 @@ extension SwiftyFaker {
         
         // TODO: how to handle the error handling better
         func author() -> String {
-            return try! Name().name
+            return try! Name().name()
         }
         
         func publisher() -> String {

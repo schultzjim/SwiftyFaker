@@ -9,7 +9,7 @@ import Foundation
 
 extension SwiftyFaker {
     private struct SlackEmojiModel: FakerCodable {
-        static var typeName: String = "slackEmoji"
+        static var typeName: String = "slack-emoji"
         
         let people: [String]
         let nature: [String]

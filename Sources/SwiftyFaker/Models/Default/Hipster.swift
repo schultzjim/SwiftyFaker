@@ -21,7 +21,7 @@ extension SwiftyFaker {
             self.model = try HipsterModel.load()
         }
         
-        func word -> String {
+        func word() -> String {
             return model.words.random()
         }
         

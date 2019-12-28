@@ -68,7 +68,7 @@ extension SwiftyFaker {
         }
         
         func masculineName() -> String {
-            return maleFirstName
+            return maleFirstName()
         }
         
         func femaleFirstName() -> String {
@@ -76,7 +76,7 @@ extension SwiftyFaker {
         }
         
         func feminineName() -> String {
-            return femaleFirstName
+            return femaleFirstName()
         }
         
         func lastName() -> String {
