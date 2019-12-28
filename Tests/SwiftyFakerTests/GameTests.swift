@@ -9,11 +9,11 @@ final class GameTests: XCTestCase {
     
     func test_title_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let title = getGame().title()()
+        let title = getGame().title()
         
         // THEN
         XCTAssertNotNil(title)
-        XCTAssertFalse(title.isEmpty())
+        XCTAssertFalse(title.isEmpty)
     }
     
     func test_genre_ShouldNotBeNilOrEmpty() {
@@ -22,7 +22,7 @@ final class GameTests: XCTestCase {
         
         // THEN
         XCTAssertNotNil(genre)
-        XCTAssertFalse(genre.isEmpty())
+        XCTAssertFalse(genre.isEmpty)
     }
     
     func test_platform_ShouldNotBeNilOrEmpty() {
@@ -31,6 +31,6 @@ final class GameTests: XCTestCase {
         
         // THEN
         XCTAssertNotNil(platform)
-        XCTAssertFalse(platform.isEmpty())
+        XCTAssertFalse(platform.isEmpty)
     }
 }
