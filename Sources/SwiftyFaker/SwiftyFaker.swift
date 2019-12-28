@@ -19,7 +19,9 @@ protocol FakerCodable: Codable {
 
 extension FakerCodable {
     static func load() throws -> Self {
-        guard let path = Bundle(identifier: "SwiftyFaker")?.path(forResource: Self.typeName, ofType: "json") else {
+        // TODO: this is not working for tests, not sure why yet
+        let bundle = Bundle(identifier: "SwiftyFaker")
+        guard let path = bundle?.path(forResource: Self.typeName, ofType: "json") else {
             throw FakerError.unableToLoadFakerType
         }
 

@@ -9,7 +9,7 @@ import Foundation
 
 extension SwiftyFaker {
     private struct BackToTheFutureModel: FakerCodable {
-        static var typeName: String = "backToTheFuture"
+        static var typeName: String = "back-to-the-future"
         
         let characters: [String]
         let dates: [String]
