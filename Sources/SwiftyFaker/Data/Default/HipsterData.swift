@@ -1,5 +1,7 @@
-{
-   "words": [
+import Foundation
+
+enum HipsterData {
+   static let words = [
       "Wes Anderson",
       "chicharrones",
       "narwhal",

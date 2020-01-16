@@ -1,5 +1,7 @@
-{
-   "people": [
+import Foundation
+
+enum SlackEmojiData {
+   static let people = [
       ":grinning:",
       ":grin:",
       ":joy:",
@@ -135,8 +137,9 @@
       ":muscle:",
       ":open_hands:",
       ":pray:"
-   ],
-   "nature": [
+   ]
+    
+   static let nature = [
       ":seedling:",
       ":evergreen_tree:",
       ":deciduous_tree:",
@@ -262,8 +265,9 @@
       ":first_quarter_moon_with_face:",
       ":last_quarter_moon_with_face:",
       ":sun_with_face:"
-   ],
-   "foodAndDrink": [
+   ]
+    
+   static let foodAndDrink = [
       ":tomato:",
       ":eggplant:",
       ":corn:",
@@ -322,8 +326,9 @@
       ":beer:",
       ":beers:",
       ":baby_bottle:"
-   ],
-   "celebration": [
+   ]
+    
+   static let celebration = [
       ":ribbon:",
       ":gift:",
       ":birthday:",
@@ -363,8 +368,9 @@
       ":yellow_heart:",
       ":green_heart:",
       ":blue_heart:"
-   ],
-   "activity": [
+   ]
+    
+   static let activity = [
       ":running:",
       ":walking:",
       ":dancer:",
@@ -418,8 +424,9 @@
       ":carousel_horse:",
       ":ferris_wheel:",
       ":roller_coaster:"
-   ],
-   "travelAndPlaces": [
+   ]
+    
+   static let travelAndPlaces = [
       ":train:",
       ":mountain_railway:",
       ":steam_locomotive:",
@@ -507,8 +514,9 @@
       ":kr:",
       ":ru:",
       ":us:"
-   ],
-   "objectsAndSymbols": [
+   ]
+    
+   static let objectsAndSymbols = [
       ":watch:",
       ":iphone:",
       ":calling:",
@@ -851,8 +859,9 @@
       ":clock1030:",
       ":clock1130:",
       ":clock1230:"
-   ],
-   "custom": [
+   ]
+    
+   static let custom = [
       ":beryl:",
       ":bowtie:",
       ":crab:",
@@ -881,4 +890,13 @@
       ":taco:",
       ":trollface:"
    ]
+    
+    static let emoji = [people.random(),
+                        nature.random(),
+                        foodAndDrink.random(),
+                        celebration.random(),
+                        activity.random(),
+                        travelAndPlaces.random(),
+                        objectsAndSymbols.random(),
+                        custom.random()]
 }

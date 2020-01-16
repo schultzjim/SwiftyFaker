@@ -8,31 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct GameModel: FakerCodable {
-        static var typeName: String = "game"
+    enum Game {
+        static let title = GameData.title.random()
         
-        let title: [String]
-        let genre: [String]
-        let platform: [String]
-    }
-
-    struct Game {
-        private var model: GameModel
+        static let genre = GameData.genre.random()
         
-        init() throws {
-            self.model = try GameModel.load()
-        }
-        
-        func title() -> String {
-            return model.title.random()
-        }
-        
-        func genre() -> String {
-            return model.genre.random()
-        }
-        
-        func platform() -> String {
-            return model.platform.random()
-        }
+        static let platform = GameData.platform.random()
     }
 }

@@ -1,5 +1,7 @@
-{
-   "modelName": [
+import Foundation
+
+enum DeviceData {
+   static let modelName = [
       "iPhone",
       "iPhone 3G",
       "iPhone 3GS",
@@ -57,8 +59,9 @@
       "Xiaomi Mi 8",
       "Xiaomi Mi 8 SE",
       "Xiaomi Pocophone F1"
-   ],
-   "platform": [
+   ]
+    
+   static let platform = [
       "Android OS",
       "webOS",
       "iOS",
@@ -74,8 +77,9 @@
       "Windows 10",
       "Windows 10 Mobile",
       "Windows Phone"
-   ],
-   "manufacturer": [
+   ]
+    
+   static let manufacturer = [
       "Dell",
       "HP",
       "ASUS",
@@ -85,8 +89,9 @@
       "Huawei",
       "OnePlus",
       "Xiamomi"
-   ],
-   "serial": [
+   ]
+    
+   static let serial = [
       "pEekWH7zGxVITv6NTa5KHjLSwr5Ie4",
       "UVr864F8zUbyYOAUd4cFOW9hpsZuGn",
       "Kl2ZroV9a",

@@ -8,62 +8,23 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct FoodModel: FakerCodable {
-        static var typeName: String = "food"
+    enum Food {
+        static let dish = FoodData.dish.random()
         
-        let dish: [String]
-        let descriptions: [String]
-        let ingredients: [String]
-        let fruits: [String]
-        let vegetables: [String]
-        let spices: [String]
-        let measurements: [String]
-        let measurementSizes: [String]
-        let metricMeasurements: [String]
-        let sushi: [String]
-    }
+        static let description = FoodData.descriptions.random()
+        
+        static let ingredient = FoodData.ingredients.random()
+        
+        static let fruit = FoodData.fruits.random()
 
-    struct Food {
-        private var model: FoodModel
-        
-        init() throws {
-            self.model = try FoodModel.load()
-        }
-        
-        func dish() -> String {
-            return model.dish.random()
-        }
-        
-        func description() -> String {
-            return model.descriptions.random()
-        }
-        
-        func ingredient() -> String {
-            return model.ingredients.random()
-        }
-        
-        func fruit() -> String {
-            return model.fruits.random()
-        }
-
-        func vegetable() -> String {
-            return model.vegetables.random()
-        }
+        static let vegetable = FoodData.vegetables.random()
                
-        func spice() -> String {
-            return model.spices.random()
-        }
+        static let spice = FoodData.spices.random()
         
-        func measurement() -> String {
-            return model.measurementSizes.random() + " " + model.measurements.random()
-        }
+        static let measurement = FoodData.measurementSizes.random() + " " + FoodData.measurements.random()
         
-        func metricMeasurement() -> String {
-            return model.metricMeasurements.random()
-        }
+        static let metricMeasurement = FoodData.metricMeasurements.random()
         
-        func sushi() -> String {
-            return model.sushi.random()
-        }
+        static let sushi = FoodData.sushi.random()
     }
 }

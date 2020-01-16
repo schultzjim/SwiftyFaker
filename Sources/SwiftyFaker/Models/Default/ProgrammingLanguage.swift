@@ -8,26 +8,9 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct ProgrammingLanguageModel: FakerCodable {
-        static var typeName: String = "programming-language"
+    enum ProgrammingLanguage {
+        static let name = ProgrammingLanguageData.name.random()
         
-        let name: [String]
-        let creator: [String]
-    }
-
-    struct ProgrammingLanguage {
-        private var model: ProgrammingLanguageModel
-        
-        init() throws {
-            self.model = try ProgrammingLanguageModel.load()
-        }
-        
-        func name() -> String {
-            return model.name.random()
-        }
-        
-        func creator() -> String {
-            return model.creator.random()
-        }
+        static let creator = ProgrammingLanguageData.creator.random()
     }
 }

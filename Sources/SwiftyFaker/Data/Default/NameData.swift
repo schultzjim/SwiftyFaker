@@ -1,5 +1,7 @@
-{
-   "maleFirstName": [
+import Foundation
+
+enum NameData {
+   static let maleFirstName = [
       "Aaron",
       "Abdul",
       "Abe",
@@ -1220,8 +1222,9 @@
       "Zack",
       "Zackary",
       "Zane"
-   ],
-   "femaleFirstName": [
+   ]
+    
+   static let femaleFirstName = [
       "Abbey",
       "Abbie",
       "Abby",
@@ -5494,8 +5497,9 @@
       "Zula",
       "Zulema",
       "Zulma"
-   ],
-   "lastName": [
+   ]
+    
+   static let lastName = [
       "Abbott",
       "Abernathy",
       "Abshire",
@@ -5969,15 +5973,17 @@
       "Ziemann",
       "Zieme",
       "Zulauf"
-   ],
-   "prefix": [
+   ]
+    
+   static let prefix = [
       "Mr.",
       "Mrs.",
       "Ms.",
       "Miss",
       "Dr."
-   ],
-   "suffix": [
+   ]
+    
+   static let suffix = [
       "Jr.",
       "Sr.",
       "I",
@@ -5990,4 +5996,22 @@
       "PhD",
       "DVM"
    ]
+    
+    static let firstName = [NameData.maleFirstName.random(), NameData.femaleFirstName.random()]
+
+    static let names = ["\(NameData.prefix.random()) \(NameData.firstName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.suffix.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random())"
+    ]
+
+    static let namesWithMiddle = ["\(NameData.prefix.random()) \(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random()) \(suffix.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
+        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())"
+    ]
 }
