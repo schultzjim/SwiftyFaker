@@ -1,5 +1,7 @@
-{
-   "title": [
+import Foundation
+
+enum BookData {
+   static let title = [
       "Absalom, Absalom!",
       "After Many a Summer Dies the Swan",
       "Ah, Wilderness!",
@@ -190,8 +192,9 @@
       "The Wives of Bath",
       "The World, the Flesh and the Devil",
       "The Yellow Meads of Asphodel"
-   ],
-   "publisher": [
+   ]
+    
+   static let publisher = [
       "Academic Press",
       "Ace Books",
       "Addison-Wesley",
@@ -456,8 +459,9 @@
       "Zed Books",
       "Ziff Davis Media",
       "Zondervan"
-   ],
-   "genre": [
+   ]
+    
+   static let genre = [
       "Classic",
       "Comic/Graphic Novel",
       "Crime/Detective",

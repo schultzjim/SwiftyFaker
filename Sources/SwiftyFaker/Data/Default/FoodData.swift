@@ -1,5 +1,7 @@
-{
-    "dish": [
+import Foundation
+
+enum FoodData {
+    static let dish = [
       "Arepas",
       "Barbecue Ribs",
       "Bruschette with Tomato",
@@ -54,8 +56,9 @@
       "Tiramisù",
       "Tuna Sashimi",
       "Vegetable Soup"
-   ],
-   "descriptions": [
+   ]
+    
+   static let descriptions = [
       "Three eggs with cilantro, tomatoes, onions, avocados and melted Emmental cheese. With a side of roasted potatoes, and your choice of toast or croissant.",
       "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant.",
       "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
@@ -70,8 +73,9 @@
       "Fresh Norwegian salmon, lightly brushed with our herbed Dijon mustard sauce, with choice of two sides.",
       "Creamy mascarpone cheese and custard layered between espresso and rum soaked house-made ladyfingers, topped with Valrhona cocoa powder.",
       "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."
-   ],
-   "ingredients": [
+   ]
+    
+   static let ingredients = [
       "Achacha",
       "Adzuki Beans",
       "Agar",
@@ -560,8 +564,9 @@
       "Yoghurt",
       "Yogurt",
       "Zucchini"
-   ],
-   "fruits": [
+   ]
+    
+   static let fruits = [
       "Apples",
       "Apricots",
       "Aubergine",
@@ -631,8 +636,9 @@
       "Tangelo",
       "Tomatoes",
       "Watermelon"
-   ],
-   "vegetables": [
+   ]
+    
+   static let vegetables = [
       "Artichoke",
       "Arugula",
       "Asian Greens",
@@ -697,8 +703,9 @@
       "Swiss Chard",
       "Turnips",
       "Zucchini"
-   ],
-   "spices": [
+   ]
+    
+   static let spices = [
       "Achiote Seed",
       "Ajwain Seed",
       "Ajwan Seed",
@@ -882,30 +889,34 @@
       "Vanilla Pods",
       "Vegetable Seasoning",
       "Zahtar Spice Mix"
-   ],
-   "measurements": [
+   ]
+    
+   static let measurements = [
       "teaspoon",
       "tablespoon",
       "cup",
       "pint",
       "quart",
       "gallon"
-   ],
-   "measurementSizes": [
+   ]
+    
+   static let measurementSizes = [
       "1/4",
       "1/3",
       "1/2",
       "1",
       "2",
       "3"
-   ],
-   "metricMeasurements": [
+   ]
+    
+   static let metricMeasurements = [
       "milliliter",
       "deciliter",
       "centiliter",
       "liter"
-   ],
-   "sushi": [
+   ]
+   
+   static let sushi = [
       "Abalone",
       "Alaskan pink shrimp",
       "Amberjack",

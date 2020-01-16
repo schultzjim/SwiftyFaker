@@ -1,5 +1,14 @@
-{
-    "characters": [
+//
+//  File.swift
+//  
+//
+//  Created by Jim Schultz on 1/16/20.
+//
+
+import Foundation
+
+enum HitchhikersGuideToTheGalaxyData {
+    static let characters = [
         "Agda",
         "Agrajag",
         "Arthur Dent",
@@ -64,8 +73,9 @@
         "Zaphod Beeblebrox",
         "Zarniwoop",
         "Zarquon"
-    ],
-    "locations": [
+    ]
+    
+    static let locations = [
         "29 Arlington Avenue",
         "Arthur Dent's house",
         "Asbleg",
@@ -120,8 +130,9 @@
         "Ysllodins",
         "Zarss",
         "Ziggie's Den of Iniquity"
-    ],
-    "marvinQuote": [
+    ]
+    
+    static let marvinQuote = [
         "Life? Don't talk to me about life.",
         "Here I am, brain the size of a planet, and they tell me to take you up to the bridge. Call that job satisfaction? 'Cos I don't.",
         "I think you ought to know I'm feeling very depressed.",
@@ -131,8 +142,9 @@
         "There's only one life-form as intelligent as me within thirty parsecs of here and that's me.",
         "I wish you'd just tell me rather trying to engage my enthusiasm, because I haven't got one.",
         "And then of course I've got this terrible pain in all the diodes down my left side."
-    ],
-    "planets": [
+    ]
+    
+    static let planets = [
         "Allosimanius Syneca",
         "Argabuthon",
         "Arkintoofle Minor",
@@ -176,8 +188,9 @@
         "Viltvodle VI",
         "Vogsphere",
         "Xaxis"
-    ],
-    "quotes": [
+    ]
+    
+    static let quotes = [
         "Earth: Mostly Harmless",
         "Whatever your tastes, Magrathea can cater for you. We are not proud.",
         "But Mr. Dent, the plans have been available in the local planning office for the last nine months.",
@@ -202,9 +215,11 @@
         "He was staring at the instruments with the air of one who is trying to convert Fahrenheit to centigrade in his head while his house is burning down.",
         "Don’t Panic",
         "42"
-    ],
-    "species": ["Algolian Suntiger", "Arcturan MegaDonkey", "Arcturan Megagrasshopper", "Azgoths of Kria", "Babel Fish", "Belcerebon", "Boghog", "Cow", "Damogran Frond Crested Eagle", "Dentrassis", "Dolphins", "Flaybooz", "Golgafrinchan", "Grebulon", "Grebulons", "Hingefreel", "Hooloovoo", "Human", "Jatravartid", "Mattress", "Mice", "Mouse", "Nanites", "Perfectly Normal Beast", "Ravenous Bugblatter Beast of Traal", "Sarkopsi", "Shaltanac", "Silastic Armorfiends", "Silver Tongued Devils", "Vl'Hurg", "Vogon"],
-    "starships": [
+    ]
+    
+    static let species = ["Algolian Suntiger", "Arcturan MegaDonkey", "Arcturan Megagrasshopper", "Azgoths of Kria", "Babel Fish", "Belcerebon", "Boghog", "Cow", "Damogran Frond Crested Eagle", "Dentrassis", "Dolphins", "Flaybooz", "Golgafrinchan", "Grebulon", "Grebulons", "Hingefreel", "Hooloovoo", "Human", "Jatravartid", "Mattress", "Mice", "Mouse", "Nanites", "Perfectly Normal Beast", "Ravenous Bugblatter Beast of Traal", "Sarkopsi", "Shaltanac", "Silastic Armorfiends", "Silver Tongued Devils", "Vl'Hurg", "Vogon"]
+    
+    static let starships = [
         "Billion Year Bunker",
         "Bistromath",
         "Golgafrinchan Ark Fleet Ship B",

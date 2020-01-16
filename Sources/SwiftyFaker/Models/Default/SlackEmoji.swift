@@ -8,64 +8,23 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct SlackEmojiModel: FakerCodable {
-        static var typeName: String = "slack-emoji"
+    enum SlackEmoji {
+        static let people = SlackEmojiData.people.random()
         
-        let people: [String]
-        let nature: [String]
-        let foodAndDrink: [String]
-        let celebration: [String]
-        let activity: [String]
-        let travelAndPlaces: [String]
-        let objectsAndSymbols: [String]
-        let custom: [String]
+        static let nature = SlackEmojiData.nature.random()
         
-        var emoji: [String] {
-            return [people.random(), nature.random(), foodAndDrink.random(), celebration.random(), activity.random(), travelAndPlaces.random(), objectsAndSymbols.random(), custom.random()]
-        }
-    }
-    
-    struct SlackEmoji {
-        private var model: SlackEmojiModel
+        static let foodAndDrink = SlackEmojiData.foodAndDrink.random()
         
-        init() throws {
-            self.model = try SlackEmojiModel.load()
-        }
+        static let celebration = SlackEmojiData.celebration.random()
         
-        func people() -> String {
-            return model.people.random()
-        }
+        static let activity = SlackEmojiData.activity.random()
         
-        func nature() -> String {
-            return model.nature.random()
-        }
+        static let travelAndPlaces = SlackEmojiData.travelAndPlaces.random()
         
-        func foodAndDrink() -> String {
-            return model.foodAndDrink.random()
-        }
+        static let objectsAndSymbols = SlackEmojiData.objectsAndSymbols.random()
         
-        func celebration() -> String {
-            return model.celebration.random()
-        }
+        static let custom = SlackEmojiData.custom.random()
         
-        func activity() -> String {
-            return model.activity.random()
-        }
-        
-        func travelAndPlaces() -> String {
-            return model.travelAndPlaces.random()
-        }
-        
-        func objectsAndSymbols() -> String {
-            return model.objectsAndSymbols.random()
-        }
-        
-        func custom() -> String {
-            return model.custom.random()
-        }
-        
-        func emoji() -> String {
-            return model.emoji.random()
-        }
+        static let emoji = SlackEmojiData.emoji.random()
     }
 }

@@ -2,14 +2,9 @@ import XCTest
 @testable import SwiftyFaker
 
 final class FoodTests: XCTestCase {
-    private func getFood() -> SwiftyFaker.Food {
-        let food = try! SwiftyFaker.Food()
-        return food
-    }
-    
     func test_dish_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let dish = getFood().dish()
+        let dish = SwiftyFaker.Food.dish
         
         // THEN
         XCTAssertNotNil(dish)
@@ -18,7 +13,7 @@ final class FoodTests: XCTestCase {
 
     func test_description_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let description = getFood().description()
+        let description = SwiftyFaker.Food.description
         
         // THEN
         XCTAssertNotNil(description)
@@ -27,7 +22,7 @@ final class FoodTests: XCTestCase {
 
     func test_ingredient_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let ingredient = getFood().ingredient()
+        let ingredient = SwiftyFaker.Food.ingredient
         
         // THEN
         XCTAssertNotNil(ingredient)
@@ -36,7 +31,7 @@ final class FoodTests: XCTestCase {
 
     func test_fruit_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let fruit = getFood().fruit()
+        let fruit = SwiftyFaker.Food.fruit
         
         // THEN
         XCTAssertNotNil(fruit)
@@ -45,7 +40,7 @@ final class FoodTests: XCTestCase {
 
     func test_vegetable_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let vegetable = getFood().vegetable()
+        let vegetable = SwiftyFaker.Food.vegetable
         
         // THEN
         XCTAssertNotNil(vegetable)
@@ -54,7 +49,7 @@ final class FoodTests: XCTestCase {
            
     func test_spice_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let spice = getFood().spice()
+        let spice = SwiftyFaker.Food.spice
         
         // THEN
         XCTAssertNotNil(spice)
@@ -63,7 +58,7 @@ final class FoodTests: XCTestCase {
 
     func test_measurement_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let measurement = getFood().measurement()
+        let measurement = SwiftyFaker.Food.measurement
         
         // THEN
         XCTAssertNotNil(measurement)
@@ -72,7 +67,7 @@ final class FoodTests: XCTestCase {
 
     func test_metricMeasurement_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let metricMeasurement = getFood().metricMeasurement()
+        let metricMeasurement = SwiftyFaker.Food.metricMeasurement
         
         // THEN
         XCTAssertNotNil(metricMeasurement)
@@ -81,7 +76,7 @@ final class FoodTests: XCTestCase {
 
     func test_sushi_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let sushi = getFood().sushi()
+        let sushi = SwiftyFaker.Food.sushi
         
         // THEN
         XCTAssertNotNil(sushi)

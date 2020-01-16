@@ -8,31 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct BackToTheFutureModel: FakerCodable {
-        static var typeName: String = "back-to-the-future"
+    enum BackToTheFuture {
+        static let character = BackToTheFutureData.characters.random()
         
-        let characters: [String]
-        let dates: [String]
-        let quotes: [String]
-    }
-    
-    struct BackToTheFuture {
-        private var model: BackToTheFutureModel
+        static let date = BackToTheFutureData.dates.random()
         
-        init() throws {
-            self.model = try BackToTheFutureModel.load()
-        }
-        
-        func character() -> String {
-            return model.characters.random()
-        }
-        
-        func date() -> String {
-            return model.dates.random()
-        }
-        
-        func quote() -> String {
-            return model.quotes.random()
-        }
+        static let quote = BackToTheFutureData.quotes.random()
     }
 }

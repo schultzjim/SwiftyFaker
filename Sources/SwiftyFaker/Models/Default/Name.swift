@@ -11,84 +11,26 @@ import Foundation
 // TODO: Write tests
 
 extension SwiftyFaker {
-    private struct NameModel: FakerCodable {
-        static var typeName: String = "name"
+    enum Name {
         
-        let maleFirstName: [String]
-        let femaleFirstname: [String]
-        let lastName: [String]
-        let prefix: [String]
-        let suffix: [String]
-
-        var firstName: [String] {
-            return [maleFirstName.random(), femaleFirstname.random()]
-        }
-
-        var names: [String] {
-            return ["\(prefix.random()) \(firstName.random()) \(lastName.random())", "\(firstName.random()) \(lastName.random()) \(suffix.random())",
-                "\(firstName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random())"
-            ]
-        }
-
-        var namesWithMiddle: [String] {
-            ["\(prefix.random()) \(firstName.random()) \(lastName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random()) \(lastName.random()) \(suffix.random())",
-                "\(firstName.random()) \(lastName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random()) \(lastName.random())",
-                "\(firstName.random()) \(lastName.random()) \(lastName.random())"
-            ]
-        }
-    }
-    
-    struct Name {
-        private var model: NameModel
+        static let name = NameData.names.random()
         
-        init() throws {
-            self.model = try NameModel.load()
-        }
+        static let nameWithMiddle = NameData.namesWithMiddle.random()
         
-        func name() -> String {
-            return model.names.random()
-        }
+        static let firstName = NameData.firstName.random()
         
-        func nameWithMiddle() -> String {
-            return model.namesWithMiddle.random()
-        }
+        static let maleFirstName = NameData.maleFirstName.random()
         
-        func firstName() -> String {
-            return model.firstName.random()
-        }
+        static let masculineName = NameData.maleFirstName
         
-        func maleFirstName() -> String {
-            return model.maleFirstName.random()
-        }
+        static let femaleFirstName = NameData.femaleFirstName.random()
         
-        func masculineName() -> String {
-            return maleFirstName()
-        }
+        static let feminineName = NameData.femaleFirstName
         
-        func femaleFirstName() -> String {
-            return model.femaleFirstname.random()
-        }
+        static let lastName = NameData.lastName.random()
         
-        func feminineName() -> String {
-            return femaleFirstName()
-        }
+        static let prefix = NameData.prefix.random()
         
-        func lastName() -> String {
-            return model.lastName.random()
-        }
-        
-        func prefix() -> String {
-            return model.prefix.random()
-        }
-        
-        func suffix() -> String {
-            return model.suffix.random()
-        }
+        static let suffix = NameData.suffix.random()
     }
 }

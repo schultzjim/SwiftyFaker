@@ -8,48 +8,19 @@
 import Foundation
 
 extension SwiftyFaker {
-    private struct DeviceModel: FakerCodable {
-        static var typeName: String = "device"
+    enum Device {
+        static let buildNumber = Int.random(in: 1...500)
         
-        let modelName: [String]
-        let platform: [String]
-        let manufacturer: [String]
-        let serial: [String]
-    }
-
-    struct Device {
-        private var model: DeviceModel
+        static let modelName = DeviceData.modelName.random()
         
-        init() throws {
-            self.model = try DeviceModel.load()
-        }
+        static let platform = DeviceData.platform.random()
         
-        func buildNumber() -> Int {
-            return Int.random(in: 1...500)
-        }
+        static let manufacturer = DeviceData.manufacturer.random()
         
-        func modelName() -> String {
-            return model.modelName.random()
-        }
+        static let serial = DeviceData.serial.random()
         
-        func platform() -> String {
-            return model.platform.random()
-        }
+        static let versionNumber = Int.random(in: 1...1000)
         
-        func manufacturer() -> String {
-            return model.manufacturer.random()
-        }
-        
-        func serial() -> String {
-            return model.serial.random()
-        }
-        
-        func versionNumber() -> Int {
-            return Int.random(in: 1...1000)
-        }
-        
-        func semanticVersionNumber() -> String {
-            return "\(Int.random(in: 0...100)).\(Int.random(in: 0...100)).\(Int.random(in: 0...100))"
-        }
+        static let semanticVersionNumber = "\(Int.random(in: 0...100)).\(Int.random(in: 0...100)).\(Int.random(in: 0...100))"
     }
 }

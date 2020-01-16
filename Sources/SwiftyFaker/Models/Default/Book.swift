@@ -11,36 +11,13 @@ import Foundation
 // TODO: Write tests
 
 extension SwiftyFaker {
-    private struct BookModel: FakerCodable {
-        static var typeName: String = "book"
+    enum Book {
+        static let title = BookData.title.random()
         
-        let title: [String]
-        let publisher: [String]
-        let genre: [String]
-    }
-    
-    struct Book {
-        private var model: BookModel
+        static let author = Name.name
         
-        init() throws {
-            self.model = try BookModel.load()
-        }
+        static let publisher = BookData.publisher.random()
         
-        func title() -> String {
-            return model.title.random()
-        }
-        
-        // TODO: how to handle the error handling better
-        func author() -> String {
-            return try! Name().name()
-        }
-        
-        func publisher() -> String {
-            return model.publisher.random()
-        }
-        
-        func genre() -> String {
-            return model.genre.random()
-        }
+        static let genre = BookData.genre.random()
     }
 }

@@ -2,14 +2,9 @@ import XCTest
 @testable import SwiftyFaker
 
 final class BackToTheFutureTests: XCTestCase {
-    private func getBackToTheFuture() -> SwiftyFaker.BackToTheFuture {
-        let backToTheFuture = try! SwiftyFaker.BackToTheFuture()
-        return backToTheFuture
-    }
-    
     func test_character_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let character = getBackToTheFuture().character()
+        let character = SwiftyFaker.BackToTheFuture.character
         
         // THEN
         XCTAssertNotNil(character)
@@ -18,7 +13,7 @@ final class BackToTheFutureTests: XCTestCase {
     
     func test_date_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let date = getBackToTheFuture().date()
+        let date = SwiftyFaker.BackToTheFuture.date
         
         // THEN
         XCTAssertNotNil(date)
@@ -27,7 +22,7 @@ final class BackToTheFutureTests: XCTestCase {
     
     func test_quote_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let quote = getBackToTheFuture().quote()
+        let quote = SwiftyFaker.BackToTheFuture.quote
         
         // THEN
         XCTAssertNotNil(quote)

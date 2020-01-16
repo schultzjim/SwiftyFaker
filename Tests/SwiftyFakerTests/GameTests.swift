@@ -2,14 +2,9 @@ import XCTest
 @testable import SwiftyFaker
 
 final class GameTests: XCTestCase {
-    private func getGame() -> SwiftyFaker.Game {
-        let game = try! SwiftyFaker.Game()
-        return game
-    }
-    
     func test_title_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let title = getGame().title()
+        let title = SwiftyFaker.Game.title
         
         // THEN
         XCTAssertNotNil(title)
@@ -18,7 +13,7 @@ final class GameTests: XCTestCase {
     
     func test_genre_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let genre = getGame().genre()
+        let genre = SwiftyFaker.Game.genre
         
         // THEN
         XCTAssertNotNil(genre)
@@ -27,7 +22,7 @@ final class GameTests: XCTestCase {
     
     func test_platform_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let platform = getGame().platform()
+        let platform = SwiftyFaker.Game.platform
         
         // THEN
         XCTAssertNotNil(platform)

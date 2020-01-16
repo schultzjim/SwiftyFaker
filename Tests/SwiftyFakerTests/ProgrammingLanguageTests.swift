@@ -2,14 +2,9 @@ import XCTest
 @testable import SwiftyFaker
 
 final class ProgrammingLanguageTests: XCTestCase {
-    private func getProgrammingLanguage() -> SwiftyFaker.ProgrammingLanguage {
-        let language = try! SwiftyFaker.ProgrammingLanguage()
-        return language
-    }
-    
     func test_name_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let name = getProgrammingLanguage().name()
+        let name = SwiftyFaker.ProgrammingLanguage.name
         
         // THEN
         XCTAssertNotNil(name)
@@ -18,7 +13,7 @@ final class ProgrammingLanguageTests: XCTestCase {
     
     func test_creator_ShouldNotBeNilOrEmpty() {
         // GIVEN
-        let creator = getProgrammingLanguage().creator()
+        let creator = SwiftyFaker.ProgrammingLanguage.creator
         
         // THEN
         XCTAssertNotNil(creator)

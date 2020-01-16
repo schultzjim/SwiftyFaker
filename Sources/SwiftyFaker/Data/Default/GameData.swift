@@ -1,5 +1,7 @@
-"game": {
-   "title": [
+import Foundation
+
+enum GameData {
+   static let title = [
       "Half-Life",
       "Half-Life: Opposing Force",
       "Half-Life: Blue Shift",
@@ -217,8 +219,9 @@
       "Diablo II",
       "Diablo III",
       "Guitar Hero"
-   ],
-   "genre": [
+   ]
+    
+   static let genre = [
       "First-person shooter",
       "Puzzle",
       "Platformer",
@@ -248,8 +251,9 @@
       "Battle royale",
       "Third-person shooter",
       "Music"
-   ],
-   "platform": [
+   ]
+    
+   static let platform = [
       "Xbox",
       "Xbox 360",
       "Xbox One",

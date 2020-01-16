@@ -1,5 +1,8 @@
-{
-   "base": [
+import Foundation
+
+enum VerbsData {
+    
+   static let base = [
       "abash",
       "abate",
       "abide",
@@ -999,8 +1002,9 @@
       "yield",
       "zinc",
       "zoom"
-   ],
-   "past": [
+   ]
+   
+   static let past = [
       "abashed",
       "abated",
       "abode",
@@ -2000,8 +2004,9 @@
       "yielded",
       "zincked",
       "zoomed"
-   ],
-   "past_participle": [
+   ]
+   
+   static let pastParticiple = [
       "abashed",
       "abated",
       "abode",
@@ -2410,8 +2415,9 @@
       "identified",
       "idolized",
       "ignited"
-   ],
-   "simple_present": [
+   ]
+   
+   static let simplePresent = [
       "abashes",
       "abates",
       "abides",
@@ -2820,8 +2826,9 @@
       "identifies",
       "idolizes",
       "ignites"
-   ],
-   "ing_form": [
+   ]
+   
+   static let ingForm = [
       "abashing",
       "abating",
       "abiding",

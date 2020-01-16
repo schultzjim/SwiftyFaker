@@ -2,14 +2,9 @@ import XCTest
 @testable import SwiftyFaker
 
 final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
-    private func getHitchhiker() -> SwiftyFaker.HitchhikersGuideToTheGalaxy {
-        let hitchhiker = try! SwiftyFaker.HitchhikersGuideToTheGalaxy()
-        return hitchhiker
-    }
-    
     func test_character_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let character = getHitchhiker().character()
+        let character = SwiftyFaker.HitchhikersGuideToTheGalaxy.character
         
         // THEN
         XCTAssertNotNil(character)
@@ -18,7 +13,7 @@ final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
     
     func test_location_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let location = getHitchhiker().location()
+        let location = SwiftyFaker.HitchhikersGuideToTheGalaxy.location
         
         // THEN
         XCTAssertNotNil(location)
@@ -27,7 +22,7 @@ final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
     
     func test_marvinQuote_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let marvinQuote = getHitchhiker().marvinQuote()
+        let marvinQuote = SwiftyFaker.HitchhikersGuideToTheGalaxy.marvinQuote
         
         // THEN
         XCTAssertNotNil(marvinQuote)
@@ -36,7 +31,7 @@ final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
     
     func test_planet_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let planet = getHitchhiker().planet()
+        let planet = SwiftyFaker.HitchhikersGuideToTheGalaxy.planet
         
         // THEN
         XCTAssertNotNil(planet)
@@ -45,7 +40,7 @@ final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
     
     func test_specie_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let specie = getHitchhiker().specie()
+        let specie = SwiftyFaker.HitchhikersGuideToTheGalaxy.specie
         
         // THEN
         XCTAssertNotNil(specie)
@@ -54,7 +49,7 @@ final class HitchhikersGuideToTheGalaxyTests: XCTestCase {
     
     func test_starship_shouldNotBeNilOrEmpty() {
         // GIVEN
-        let starship = getHitchhiker().starship()
+        let starship = SwiftyFaker.HitchhikersGuideToTheGalaxy.starship
         
         // THEN
         XCTAssertNotNil(starship)

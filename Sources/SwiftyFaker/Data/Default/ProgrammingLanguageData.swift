@@ -1,5 +1,7 @@
-{
-   "name": [
+import Foundation
+
+enum ProgrammingLanguageData {
+   static let name = [
       "A# .NET",
       "A# (Axiom)",
       "A-0 System",
@@ -726,8 +728,9 @@
       "Zsh",
       "ZPL",
       "Z++"
-   ],
-   "creator": [
+   ]
+    
+   static let creator = [
       "John Backus",
       "Friedrich L. Bauer",
       "Gilad Bracha",
