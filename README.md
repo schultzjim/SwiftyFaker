@@ -4,25 +4,25 @@ A fake data generator written in Swift. Inspired by and Aspiring to be as amazin
 
 ## Usage
 ```swift
-Faker.Name().name -> "Nellie Buckridge Jr."
-Faker.Lorem().sentence -> "voluptas consequatur magnam harum."
+SwiftyFaker.Name.name -> "Nellie Buckridge Jr."
+SwiftyFaker.Lorem.sentence -> "voluptas consequatur magnam harum."
 ```
 
 ## Faker.Book
 ```swift
-Faker.Book().title -> "The Zookeeper and Her Tiger"
-Faker.Book().author -> "Janie Bashirian"
-Faker.Book().publisher -> "Parker Publishing"
-Faker.Book().genre -> "Reference book"
+SwiftyFaker.Book.title -> "The Zookeeper and Her Tiger"
+SwiftyFaker.Book.author -> "Janie Bashirian"
+SwiftyFaker.Book.publisher -> "Parker Publishing"
+SwiftyFaker.Book.genre -> "Reference book"
 ```
 
 ## Faker.Name
 ```swift
-Faker.Name().name -> "Mrs. Grant Wilkinson"
-Faker.Name().firstName -> "Willy"
-Faker.Name().lastName -> "Rolfson"
-Faker.Name().prefix -> "Ms."
-Faker.Name().suffix -> "II"
+SwiftyFaker.Name.name -> "Mrs. Grant Wilkinson"
+SwiftyFaker.Name.firstName -> "Willy"
+SwiftyFaker.Name.lastName -> "Rolfson"
+SwiftyFaker.Name.prefix -> "Ms."
+SwiftyFaker.Name.suffix -> "II"
 ```
 
 ## Contributing
