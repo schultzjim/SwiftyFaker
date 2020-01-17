@@ -27,6 +27,6 @@ final class CurrencyTests: XCTestCase {
             // THEN
             XCTAssertNotNil(symbol)
             XCTAssertFalse(symbol.isEmpty)
-        }
     }
+
 }

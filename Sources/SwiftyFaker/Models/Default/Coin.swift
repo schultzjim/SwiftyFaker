@@ -7,9 +7,11 @@
 
 import Foundation
 
-enum Coin {
-    
-    static let name = Currency.name
-    
-    static let flip = ["Heads", "Tails"].random()
+extension SwiftyFaker {
+    enum Coin {
+        
+        static let name = Currency.name
+        
+        static let flip = ["Heads", "Tails"].random()
+    }
 }

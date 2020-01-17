@@ -7,10 +7,12 @@
 
 import Foundation
 
-enum Currency {
-    static let name = CurrencyData.name.random()
-    
-    static let code = CurrencyData.code.random()
-    
-    static let symbol = CurrencyData.symbol.random()
+extension SwiftyFaker {
+    enum Currency {
+        static let name = CurrencyData.name.random()
+        
+        static let code = CurrencyData.code.random()
+        
+        static let symbol = CurrencyData.symbol.random()
+    }
 }
