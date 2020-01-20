@@ -19,4 +19,9 @@ final class CoinTests: XCTestCase {
         XCTAssertNotNil(flip)
         XCTAssertFalse(flip.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_name_shouldNotBeNilOrEmpty", test_name_shouldNotBeNilOrEmpty),
+        ("test_flip_shouldNotBeNilOrEmpty", test_flip_shouldNotBeNilOrEmpty)
+    ]
 }

@@ -28,4 +28,10 @@ final class BackToTheFutureTests: XCTestCase {
         XCTAssertNotNil(quote)
         XCTAssertFalse(quote.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_character_shouldNotBeNilOrEmpty", test_character_shouldNotBeNilOrEmpty),
+        ("test_date_shouldNotBeNilOrEmpty", test_date_shouldNotBeNilOrEmpty),
+        ("test_quote_shouldNotBeNilOrEmpty", test_quote_shouldNotBeNilOrEmpty)
+    ]
 }

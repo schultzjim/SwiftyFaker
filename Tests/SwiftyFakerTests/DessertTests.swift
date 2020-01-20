@@ -28,4 +28,10 @@ final class DessertTests: XCTestCase {
         XCTAssertNotNil(flavor)
         XCTAssertFalse(flavor.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_variety_shouldNotBeNilOrEmpty", test_variety_shouldNotBeNilOrEmpty),
+        ("test_topping_shouldNotBeNilOrEmpty", test_topping_shouldNotBeNilOrEmpty),
+        ("test_flavor_shouldNotBeNilOrEmpty", test_flavor_shouldNotBeNilOrEmpty)
+    ]
 }

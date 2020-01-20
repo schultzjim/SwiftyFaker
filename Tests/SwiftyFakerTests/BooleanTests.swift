@@ -8,4 +8,8 @@ final class BooleanTests: XCTestCase {
         
         XCTAssertNotNil(boolean)
     }
+    
+    static var allTests = [
+        ("test_boolean_ShouldNotBeNil", test_boolean_ShouldNotBeNil)
+    ]
 }

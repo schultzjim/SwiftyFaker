@@ -28,4 +28,10 @@ final class GameTests: XCTestCase {
         XCTAssertNotNil(platform)
         XCTAssertFalse(platform.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_title_ShouldNotBeNilOrEmpty", test_title_ShouldNotBeNilOrEmpty),
+        ("test_genre_ShouldNotBeNilOrEmpty", test_genre_ShouldNotBeNilOrEmpty),
+        ("test_platform_ShouldNotBeNilOrEmpty", test_platform_ShouldNotBeNilOrEmpty)
+    ]
 }

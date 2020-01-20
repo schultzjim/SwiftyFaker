@@ -29,4 +29,9 @@ final class CurrencyTests: XCTestCase {
             XCTAssertFalse(symbol.isEmpty)
     }
 
+    static var allTests = [
+        ("test_name_shouldNotBeNilOrEmpty", test_name_shouldNotBeNilOrEmpty),
+        ("test_code_shouldNotBeNilOrEmpty", test_code_shouldNotBeNilOrEmpty),
+        ("test_symbol_shouldNotBeNilOrEmpty", test_symbol_shouldNotBeNilOrEmpty)
+    ]
 }

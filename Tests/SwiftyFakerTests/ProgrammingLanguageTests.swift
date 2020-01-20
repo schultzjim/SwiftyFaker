@@ -19,4 +19,9 @@ final class ProgrammingLanguageTests: XCTestCase {
         XCTAssertNotNil(creator)
         XCTAssertFalse(creator.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_name_ShouldNotBeNilOrEmpty", test_name_ShouldNotBeNilOrEmpty),
+        ("test_creator_ShouldNotBeNilOrEmpty", test_creator_ShouldNotBeNilOrEmpty)
+    ]
 }

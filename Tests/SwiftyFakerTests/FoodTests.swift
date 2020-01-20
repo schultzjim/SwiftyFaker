@@ -82,4 +82,16 @@ final class FoodTests: XCTestCase {
         XCTAssertNotNil(sushi)
         XCTAssertFalse(sushi.isEmpty)
     }
+    
+    static var allTests = [
+        ("test_dish_shouldNotBeNilOrEmpty", test_dish_shouldNotBeNilOrEmpty),
+        ("test_description_shouldNotBeNilOrEmpty", test_description_shouldNotBeNilOrEmpty),
+        ("test_ingredient_shouldNotBeNilOrEmpty", test_ingredient_shouldNotBeNilOrEmpty),
+        ("test_fruit_shouldNotBeNilOrEmpty", test_fruit_shouldNotBeNilOrEmpty),
+        ("test_vegetable_shouldNotBeNilOrEmpty", test_fruit_shouldNotBeNilOrEmpty),
+        ("test_spice_shouldNotBeNilOrEmpty", test_spice_shouldNotBeNilOrEmpty),
+        ("test_measurement_shouldNotBeNilOrEmpty", test_measurement_shouldNotBeNilOrEmpty),
+        ("test_metricMeasurement_shouldNotBeNilOrEmpty", test_metricMeasurement_shouldNotBeNilOrEmpty),
+        ("test_sushi_shouldNotBeNilOrEmpty", test_sushi_shouldNotBeNilOrEmpty),
+    ]
 }
