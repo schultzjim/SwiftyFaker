@@ -3,6 +3,13 @@ import XCTest
 #if !canImport(ObjectiveC)
 public func allTests() -> [XCTestCaseEntry] {
     
+    func booksTests() -> [XCTestCaseEntry] {
+        return [
+            testCase(BookTests.allTests),
+            testCase(CultureSeriesTests.allTests),
+        ]
+    }
+    
     func creatureTests() -> [XCTestCaseEntry] {
         return [
             testCase(AnimalTests.allTests),
@@ -41,6 +48,6 @@ public func allTests() -> [XCTestCaseEntry] {
         ]
     }
     
-    return creatureTests + defaultTests + moviesTests
+    return booksTests + creatureTests + defaultTests + moviesTests
 }
 #endif
