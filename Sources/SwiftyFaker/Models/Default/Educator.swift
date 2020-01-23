@@ -15,7 +15,7 @@ extension SwiftyFaker {
         
         static let subject = EducatorData.subject.random()
         
-        static let courseName = "\(EducatorData.subject.random()) \(EducatorData.Tertiary.Degree.courseNumber.random())".numberify()
+        static let courseName = "\(EducatorData.subject.random()) \(EducatorData.Tertiary.Degree.courseNumber.random())".numberize()
         
         static let secondarySchool = "\(EducatorData.schoolName.random()) \(EducatorData.secondary.random())"
         

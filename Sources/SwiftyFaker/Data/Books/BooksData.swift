@@ -7,4 +7,4 @@
 
 import Foundation
 
-enum BooksData {}
+internal enum BooksData {}

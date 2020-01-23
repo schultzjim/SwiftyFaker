@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Utilities.swift
 //  
 //
 //  Created by Jim Schultz on 12/6/19.
@@ -14,7 +14,7 @@ extension Array where Element == String {
     }
 }
 
-// number/letter-ify-able, converts strings with placeholder characters to number/letter strings
+// numberizeable/letterizeable, converts strings with placeholder characters to number/letter strings
 // example "3###" -> "3584"
 // example "3???" -> "3ABR"
 extension String {
@@ -24,7 +24,7 @@ extension String {
     static let Letters = UppercaseLetters + LowercaseLetters
     static let NumbersLetters = Numbers + Letters
     
-    func numberify(allowsLeadingZeros: Bool = false) -> String {
+    func numberize(allowsLeadingZeros: Bool = false) -> String {
         let range = self.startIndex...self.startIndex
         var numberString = self
         
@@ -33,20 +33,20 @@ extension String {
             numberString = self.replacingCharacters(in: range, with: "\(numberRange)")
         }
         
-        var numerifiedString = ""
+        var numberizedString = ""
         
         for character in numberString {
             if character == "#" {
-                numerifiedString += "\(Int.random(in: 0...9))"
+                numberizedString += "\(Int.random(in: 0...9))"
             } else {
-                numerifiedString.append(character)
+                numberizedString.append(character)
             }
         }
         
-        return numerifiedString
+        return numberizedString
     }
     
-    func letterify() -> String {
+    func letterize() -> String {
         var string = ""
         for character in self {
             if character == "?" {
@@ -59,7 +59,7 @@ extension String {
         return string
     }
     
-    func letterifyAndNumberify(allowsLeadingZeros: Bool = false) -> String {
-        return self.letterify().numberify()
+    func letterizeAndNumberize(allowsLeadingZeros: Bool = false) -> String {
+        return self.letterize().numberize()
     }
 }

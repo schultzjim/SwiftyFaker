@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CreatureData {
+internal enum CreatureData {
     
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct SwiftyFaker {
+public struct SwiftyFaker {
     var text = "Hello, World!"
 }
