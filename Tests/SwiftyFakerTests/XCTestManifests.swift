@@ -22,6 +22,7 @@ public func allTests() -> [XCTestCaseEntry] {
     
     func defaultTests() -> [XCTestCaseEntry] {
         return [
+            testCase(AncientTests.allTests),
             testCase(BooleanTests.allTests),
             testCase(CoinTests.allTests),
             testCase(ColorTests.allTests),
