@@ -23,7 +23,9 @@ public func allTests() -> [XCTestCaseEntry] {
     func defaultTests() -> [XCTestCaseEntry] {
         return [
             testCase(AncientTests.allTests),
+            testCase(ApplianceTests.allTests),
             testCase(BooleanTests.allTests),
+            testCase(ChuckNorrisTests.allTests),
             testCase(CoinTests.allTests),
             testCase(ColorTests.allTests),
             testCase(CurrencyTests.allTests),
@@ -31,7 +33,6 @@ public func allTests() -> [XCTestCaseEntry] {
             testCase(DeviceTests.allTests),
             testCase(EducatorTests.allTests),
             testCase(FoodTests.allTests),
-            testCase(GameTests.allTests),
             testCase(GenderTests.allTests),
             testCase(HipsterTests.allTests),
             testCase(NameTests.allTests),
@@ -42,6 +43,12 @@ public func allTests() -> [XCTestCaseEntry] {
         ]
     }
     
+    func gamesTests() -> [XCTestCaseEntry] {
+        return [
+            testCase(GameTests.allTests),
+        ]
+    }
+    
     func moviesTests() -> [XCTestCaseEntry] {
         return [
             testCase(BackToTheFutureTests.allTests),
@@ -49,6 +56,6 @@ public func allTests() -> [XCTestCaseEntry] {
         ]
     }
     
-    return booksTests + creatureTests + defaultTests + moviesTests
+    return booksTests + creatureTests + defaultTests + gamesTests + moviesTests
 }
 #endif
