@@ -12,7 +12,7 @@ extension SwiftyFaker {
         
         // TODO: hexColor
         
-        static let colorName = ColorData.name.random()
+        static let colorName = nameData.random()
         
         // singleRgbColor
         static let singleRgbColor = Int.random(in: 0...255)

@@ -1,7 +1,7 @@
 import Foundation
 
-enum GameData {
-   static let title = [
+extension SwiftyFaker.Game {
+   static let titleData = [
       "Half-Life",
       "Half-Life: Opposing Force",
       "Half-Life: Blue Shift",
@@ -221,7 +221,7 @@ enum GameData {
       "Guitar Hero"
    ]
     
-   static let genre = [
+   static let genreData = [
       "First-person shooter",
       "Puzzle",
       "Platformer",
@@ -253,7 +253,7 @@ enum GameData {
       "Music"
    ]
     
-   static let platform = [
+   static let platformData = [
       "Xbox",
       "Xbox 360",
       "Xbox One",

@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum CurrencyData {
-    static let code = [
+extension SwiftyFaker.Currency {
+    static let codeData = [
         "AED",
         "AFN",
         "ALL",
@@ -180,7 +180,7 @@ enum CurrencyData {
         "ZWL"
     ]
     
-    static let name = [
+    static let nameData = [
         "UAE Dirham",
         "Afghani",
         "Lek",
@@ -352,7 +352,7 @@ enum CurrencyData {
         "Zimbabwe Dollar"
     ]
     
-    static let symbol = [
+    static let symbolData = [
         "HK$",
         "Ft",
         "₪",

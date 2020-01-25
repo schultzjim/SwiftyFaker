@@ -9,10 +9,10 @@ import Foundation
 
 extension SwiftyFaker {
     enum Gender {
-        static let type = GenderData.types.random()
+        static let type = typesData.random()
         
-        static let binaryType = GenderData.binaryTypes.random()
+        static let binaryType = binaryTypesData.random()
         
-        static let shortBinaryType = GenderData.shortBinaryTypes.random()
+        static let shortBinaryType = shortBinaryTypesData.random()
     }
 }

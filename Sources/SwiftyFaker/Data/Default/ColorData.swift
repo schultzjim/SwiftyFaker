@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum ColorData {
-    static let name = [
+extension SwiftyFaker.Color {
+    static let nameData = [
        "amaranth",
        "amber",
        "amethyst",

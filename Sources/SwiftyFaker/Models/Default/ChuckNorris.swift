@@ -9,6 +9,6 @@ import Foundation
 
 extension SwiftyFaker {
     enum ChuckNorris {
-        static let fact = ChuckNorrisData.fact.random()
+        static let fact = factData.random()
     }
 }

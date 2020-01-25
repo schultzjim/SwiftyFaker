@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum ApplianceData {
-    static let brand = [
+extension SwiftyFaker.Appliance {
+    static let brandData = [
         "Admiral",
         "Amana",
         "Blue Star",
@@ -25,7 +25,7 @@ enum ApplianceData {
         "Whirlpool"
     ]
     
-    static let equipment = [
+    static let equipmentData = [
         "Air ioniser",
         "Air purifier",
         "Appliance plug",

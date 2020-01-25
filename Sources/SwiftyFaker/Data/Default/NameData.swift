@@ -1,7 +1,7 @@
 import Foundation
 
-enum NameData {
-   static let maleFirstName = [
+extension SwiftyFaker.Name {
+   static let maleFirstNameData = [
       "Aaron",
       "Abdul",
       "Abe",
@@ -1224,7 +1224,7 @@ enum NameData {
       "Zane"
    ]
     
-   static let femaleFirstName = [
+   static let femaleFirstNameData = [
       "Abbey",
       "Abbie",
       "Abby",
@@ -5499,7 +5499,7 @@ enum NameData {
       "Zulma"
    ]
     
-   static let lastName = [
+   static let lastNameData = [
       "Abbott",
       "Abernathy",
       "Abshire",
@@ -5975,7 +5975,7 @@ enum NameData {
       "Zulauf"
    ]
     
-   static let prefix = [
+   static let prefixData = [
       "Mr.",
       "Mrs.",
       "Ms.",
@@ -5983,7 +5983,7 @@ enum NameData {
       "Dr."
    ]
     
-   static let suffix = [
+   static let suffixData = [
       "Jr.",
       "Sr.",
       "I",
@@ -5997,21 +5997,21 @@ enum NameData {
       "DVM"
    ]
     
-    static let firstName = [NameData.maleFirstName.random(), NameData.femaleFirstName.random()]
+    static let firstNameData = [maleFirstNameData.random(), femaleFirstNameData.random()]
 
-    static let names = ["\(NameData.prefix.random()) \(NameData.firstName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.suffix.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random())"
+    static let namesData = ["\(prefixData.random()) \(firstNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(suffixData.random())",
+        "\(firstNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random())"
     ]
 
-    static let namesWithMiddle = ["\(NameData.prefix.random()) \(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random()) \(suffix.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())",
-        "\(NameData.firstName.random()) \(NameData.lastName.random()) \(NameData.lastName.random())"
+    static let namesWithMiddleData = ["\(prefixData.random()) \(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random()) \(suffixData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random())",
+        "\(firstNameData.random()) \(lastNameData.random()) \(lastNameData.random())"
     ]
 }

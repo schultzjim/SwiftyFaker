@@ -9,12 +9,12 @@ import Foundation
 
 extension SwiftyFaker {
     enum Ancient {
-        static let god = AncientData.god.random()
+        static let god = godData.random()
         
-        static let primordial = AncientData.primordial.random()
+        static let primordial = primordialData.random()
         
-        static let titan = AncientData.titan.random()
+        static let titan = titanData.random()
         
-        static let hero = AncientData.hero.random()
+        static let hero = heroData.random()
     }
 }

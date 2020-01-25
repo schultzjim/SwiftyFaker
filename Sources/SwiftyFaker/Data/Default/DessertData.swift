@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum DessertData {
-    static let variety = [
+extension SwiftyFaker.Dessert {
+    static let varietyData = [
        "Cake",
        "Cookie",
        "Pie",
@@ -32,7 +32,7 @@ enum DessertData {
        "Upside Down Pineapple Cake"
     ]
     
-    static let topping = [
+    static let toppingData = [
        "Rainbow Sprinkles",
        "Chocolate Chips",
        "Whipped Cream",
@@ -58,7 +58,7 @@ enum DessertData {
        "Cinnamon"
     ]
     
-    static let flavor = [
+    static let flavorData = [
        "Vanilla",
        "Chocolate",
        "Strawberry",

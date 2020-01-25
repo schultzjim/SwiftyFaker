@@ -9,20 +9,20 @@ import Foundation
 
 extension SwiftyFaker.Creature {
     enum Dog {
-        static let name = CreatureData.DogData.name.random()
+        static let name = nameData.random()
         
-        static let breed = CreatureData.DogData.breed.random()
+        static let breed = breedData.random()
         
-        static let sound = CreatureData.DogData.sound.random()
+        static let sound = soundData.random()
         
-        static let memePhrase = CreatureData.DogData.memePhrase.random()
+        static let memePhrase = memePhraseData.random()
         
-        static let age = CreatureData.DogData.age.random()
+        static let age = ageData.random()
         
         static let gender = SwiftyFaker.Gender.binaryType
         
-        static let coatLength = CreatureData.DogData.coatLength.random()
+        static let coatLength = coatLengthData.random()
         
-        static let size = CreatureData.DogData.size.random()
+        static let size = sizeData.random()
     }
 }

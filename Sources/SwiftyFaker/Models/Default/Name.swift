@@ -13,24 +13,24 @@ import Foundation
 extension SwiftyFaker {
     enum Name {
         
-        static let name = NameData.names.random()
+        static let name = namesData.random()
         
-        static let nameWithMiddle = NameData.namesWithMiddle.random()
+        static let nameWithMiddle = namesWithMiddleData.random()
         
-        static let firstName = NameData.firstName.random()
+        static let firstName = firstNameData.random()
         
-        static let maleFirstName = NameData.maleFirstName.random()
+        static let maleFirstName = maleFirstNameData.random()
         
-        static let masculineName = NameData.maleFirstName
+        static let masculineName = maleFirstNameData.random()
         
-        static let femaleFirstName = NameData.femaleFirstName.random()
+        static let femaleFirstName = femaleFirstNameData.random()
         
-        static let feminineName = NameData.femaleFirstName
+        static let feminineName = femaleFirstNameData.random()
         
-        static let lastName = NameData.lastName.random()
+        static let lastName = lastNameData.random()
         
-        static let prefix = NameData.prefix.random()
+        static let prefix = prefixData.random()
         
-        static let suffix = NameData.suffix.random()
+        static let suffix = suffixData.random()
     }
 }

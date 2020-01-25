@@ -9,16 +9,16 @@ import Foundation
 
 extension SwiftyFaker {
     enum HitchhikersGuideToTheGalaxy {
-        static let character = HitchhikersGuideToTheGalaxyData.characters.random()
+        static let character = charactersData.random()
         
-        static let location = HitchhikersGuideToTheGalaxyData.locations.random()
+        static let location = locationsData.random()
         
-        static let marvinQuote = HitchhikersGuideToTheGalaxyData.marvinQuote.random()
+        static let marvinQuote = marvinQuoteData.random()
         
-        static let planet = HitchhikersGuideToTheGalaxyData.planets.random()
+        static let planet = planetsData.random()
         
-        static let specie = HitchhikersGuideToTheGalaxyData.species.random()
+        static let specie = speciesData.random()
         
-        static let starship = HitchhikersGuideToTheGalaxyData.starships.random()
+        static let starship = starshipsData.random()
     }
 }

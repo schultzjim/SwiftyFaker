@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum AncientData {
-    static let god = [
+extension SwiftyFaker.Ancient {
+    static let godData = [
         "Aphrodite",
         "Apollo",
         "Ares",
@@ -25,7 +25,7 @@ enum AncientData {
         "Zeus"
     ]
     
-    static let primordial = [
+    static let primordialData = [
         "Aion",
         "Aether",
         "Ananke",
@@ -48,7 +48,7 @@ enum AncientData {
         "Nemesis"
     ]
     
-    static let titan = [
+    static let titanData = [
         "Coeus",
         "Crius",
         "Cronus",
@@ -84,7 +84,7 @@ enum AncientData {
         "Styx"
     ]
     
-    static let hero = [
+    static let heroData = [
         "Abderus",
         "Achilles",
         "Aeneas",

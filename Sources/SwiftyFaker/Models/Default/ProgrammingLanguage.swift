@@ -9,8 +9,8 @@ import Foundation
 
 extension SwiftyFaker {
     enum ProgrammingLanguage {
-        static let name = ProgrammingLanguageData.name.random()
+        static let name = nameData.random()
         
-        static let creator = ProgrammingLanguageData.creator.random()
+        static let creator = creatorData.random()
     }
 }

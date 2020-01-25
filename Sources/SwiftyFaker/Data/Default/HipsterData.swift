@@ -1,7 +1,7 @@
 import Foundation
 
-enum HipsterData {
-   static let words = [
+extension SwiftyFaker.Hipster {
+   static let wordsData = [
       "Wes Anderson",
       "chicharrones",
       "narwhal",

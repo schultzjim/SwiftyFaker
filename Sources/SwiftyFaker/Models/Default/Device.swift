@@ -11,13 +11,13 @@ extension SwiftyFaker {
     enum Device {
         static let buildNumber = Int.random(in: 1...500)
         
-        static let modelName = DeviceData.modelName.random()
+        static let modelName = modelNameData.random()
         
-        static let platform = DeviceData.platform.random()
+        static let platform = platformData.random()
         
-        static let manufacturer = DeviceData.manufacturer.random()
+        static let manufacturer = manufacturerData.random()
         
-        static let serial = DeviceData.serial.random()
+        static let serial = serialData.random()
         
         static let versionNumber = Int.random(in: 1...1000)
         

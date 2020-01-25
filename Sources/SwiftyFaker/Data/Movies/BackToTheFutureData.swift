@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum BackToTheFutureData {
-    static let characters = [
+extension SwiftyFaker.BackToTheFuture {
+    static let charactersData = [
         "Marty McFly",
         "Dr. Emmett Brown",
         "Lorraine Baines",
@@ -35,7 +35,7 @@ enum BackToTheFutureData {
         "Einstein"
     ]
     
-    static let dates = [
+    static let datesData = [
         "November 5, 1955",
         "November 12, 1955",
         "October 25, 1985",
@@ -43,7 +43,7 @@ enum BackToTheFutureData {
         "October 21, 2015"
     ]
     
-    static let quotes = [
+    static let quotesData = [
         "Ah, Jesus Christ! Jesus Christ, Doc, you disintegrated Einstein!",
         "All right. This is an oldie, but, uh... well, it's an oldie where I come from.",
         "Am I to understand you're still hanging around with Dr. Emmett Brown, McFly?",

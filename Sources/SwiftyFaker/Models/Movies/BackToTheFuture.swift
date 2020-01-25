@@ -9,10 +9,10 @@ import Foundation
 
 extension SwiftyFaker {
     enum BackToTheFuture {
-        static let character = BackToTheFutureData.characters.random()
+        static let character = charactersData.random()
         
-        static let date = BackToTheFutureData.dates.random()
+        static let date = datesData.random()
         
-        static let quote = BackToTheFutureData.quotes.random()
+        static let quote = quotesData.random()
     }
 }

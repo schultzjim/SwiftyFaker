@@ -9,10 +9,10 @@ import Foundation
 
 extension SwiftyFaker.Creature {
     enum Cat {
-        static let name = CreatureData.CatData.name.random()
+        static let name = nameData.random()
         
-        static let breed = CreatureData.CatData.breed.random()
+        static let breed = breedData.random()
         
-        static let registry = CreatureData.CatData.registry.random()
+        static let registry = registryData.random()
     }
 }

@@ -1,7 +1,7 @@
 import Foundation
 
-enum FoodData {
-    static let dish = [
+extension SwiftyFaker.Food {
+    static let dishData = [
       "Arepas",
       "Barbecue Ribs",
       "Bruschette with Tomato",
@@ -58,7 +58,7 @@ enum FoodData {
       "Vegetable Soup"
    ]
     
-   static let descriptions = [
+   static let descriptionsData = [
       "Three eggs with cilantro, tomatoes, onions, avocados and melted Emmental cheese. With a side of roasted potatoes, and your choice of toast or croissant.",
       "Three egg omelet with Roquefort cheese, chives, and ham. With a side of roasted potatoes, and your choice of toast or croissant.",
       "Three egg whites with spinach, mushrooms, caramelized onions, tomatoes and low-fat feta cheese. With herbed quinoa, and your choice of rye or whole-grain toast.",
@@ -75,7 +75,7 @@ enum FoodData {
       "Granny Smith apples mixed with brown sugar and butter filling, in a flaky all-butter crust, with ice cream."
    ]
     
-   static let ingredients = [
+   static let ingredientsData = [
       "Achacha",
       "Adzuki Beans",
       "Agar",
@@ -566,7 +566,7 @@ enum FoodData {
       "Zucchini"
    ]
     
-   static let fruits = [
+   static let fruitsData = [
       "Apples",
       "Apricots",
       "Aubergine",
@@ -638,7 +638,7 @@ enum FoodData {
       "Watermelon"
    ]
     
-   static let vegetables = [
+   static let vegetablesData = [
       "Artichoke",
       "Arugula",
       "Asian Greens",
@@ -705,7 +705,7 @@ enum FoodData {
       "Zucchini"
    ]
     
-   static let spices = [
+   static let spicesData = [
       "Achiote Seed",
       "Ajwain Seed",
       "Ajwan Seed",
@@ -891,7 +891,7 @@ enum FoodData {
       "Zahtar Spice Mix"
    ]
     
-   static let measurements = [
+   static let measurementsData = [
       "teaspoon",
       "tablespoon",
       "cup",
@@ -900,7 +900,7 @@ enum FoodData {
       "gallon"
    ]
     
-   static let measurementSizes = [
+   static let measurementSizesData = [
       "1/4",
       "1/3",
       "1/2",
@@ -909,14 +909,14 @@ enum FoodData {
       "3"
    ]
     
-   static let metricMeasurements = [
+   static let metricMeasurementsData = [
       "milliliter",
       "deciliter",
       "centiliter",
       "liter"
    ]
    
-   static let sushi = [
+   static let sushiData = [
       "Abalone",
       "Alaskan pink shrimp",
       "Amberjack",

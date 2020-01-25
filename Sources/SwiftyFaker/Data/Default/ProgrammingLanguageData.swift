@@ -1,7 +1,7 @@
 import Foundation
 
-enum ProgrammingLanguageData {
-   static let name = [
+extension SwiftyFaker.ProgrammingLanguage {
+   static let nameData = [
       "A# .NET",
       "A# (Axiom)",
       "A-0 System",
@@ -730,7 +730,7 @@ enum ProgrammingLanguageData {
       "Z++"
    ]
     
-   static let creator = [
+   static let creatorData = [
       "John Backus",
       "Friedrich L. Bauer",
       "Gilad Bracha",

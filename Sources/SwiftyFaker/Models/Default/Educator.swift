@@ -9,16 +9,16 @@ import Foundation
 
 extension SwiftyFaker {
     enum Educator {
-        static let university = "\(EducatorData.schoolName.random()) \(EducatorData.Tertiary.universityType.random())"
+        static let university = "\(schoolNameData.random()) \(Tertiary.universityTypeData.random())"
         
-        static let degree = "\(EducatorData.Tertiary.Degree.type.random()) \(EducatorData.subject.random())"
+        static let degree = "\(Tertiary.Degree.typeData.random()) \(subjectData.random())"
         
-        static let subject = EducatorData.subject.random()
+        static let subject = subjectData.random()
         
-        static let courseName = "\(EducatorData.subject.random()) \(EducatorData.Tertiary.Degree.courseNumber.random())".numberize()
+        static let courseName = "\(subjectData.random()) \(Tertiary.Degree.courseNumberData.random())".numberize()
         
-        static let secondarySchool = "\(EducatorData.schoolName.random()) \(EducatorData.secondary.random())"
+        static let secondarySchool = "\(schoolNameData.random()) \(secondaryData.random())"
         
-        static let campus = "\(EducatorData.schoolName.random()) Campus"
+        static let campus = "\(schoolNameData.random()) Campus"
     }
 }

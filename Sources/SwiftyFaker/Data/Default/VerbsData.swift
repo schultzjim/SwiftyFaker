@@ -1,8 +1,8 @@
 import Foundation
 
-enum VerbsData {
+extension SwiftyFaker.Verbs {
     
-   static let base = [
+   static let baseData = [
       "abash",
       "abate",
       "abide",
@@ -1004,7 +1004,7 @@ enum VerbsData {
       "zoom"
    ]
    
-   static let past = [
+   static let pastData = [
       "abashed",
       "abated",
       "abode",
@@ -2006,7 +2006,7 @@ enum VerbsData {
       "zoomed"
    ]
    
-   static let pastParticiple = [
+   static let pastParticipleData = [
       "abashed",
       "abated",
       "abode",
@@ -2417,7 +2417,7 @@ enum VerbsData {
       "ignited"
    ]
    
-   static let simplePresent = [
+   static let simplePresentData = [
       "abashes",
       "abates",
       "abides",
@@ -2828,7 +2828,7 @@ enum VerbsData {
       "ignites"
    ]
    
-   static let ingForm = [
+   static let ingFormData = [
       "abashing",
       "abating",
       "abiding",

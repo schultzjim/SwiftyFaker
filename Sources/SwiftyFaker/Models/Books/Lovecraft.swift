@@ -9,20 +9,20 @@ import Foundation
 
 extension SwiftyFaker.Books {
     enum Lovecraft {
-        static let location = BooksData.LovecraftData.location.random()
+        static let location = locationData.random()
         
         static func fhtagn(number: Int = 1) -> String {
             var fhtagnArray = [String]()
             for _ in 0..<number {
-                fhtagnArray.append(BooksData.LovecraftData.fhtagn.random())
+                fhtagnArray.append(fhtagnData.random())
             }
             
             return fhtagnArray.joined(separator: ". ")
         }
         
-        static let deity = BooksData.LovecraftData.deity.random()
+        static let deity = deityData.random()
         
-        static let tome = BooksData.LovecraftData.tome.random()
+        static let tome = tomeData.random()
         
         // TODO: Figure this out
 //        static func sentence

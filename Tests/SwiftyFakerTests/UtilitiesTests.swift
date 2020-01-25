@@ -19,7 +19,7 @@ final class UtilitiesTests: XCTestCase {
         let testString = "#35#8#9#"
         
         // WHEN
-        let numberifiedString = testString.numberify(allowsLeadingZeros: true)
+        let numberifiedString = testString.numberize(allowsLeadingZeros: true)
         
         // THEN
         XCTAssertFalse(numberifiedString.contains("#"))
@@ -30,7 +30,7 @@ final class UtilitiesTests: XCTestCase {
         let testString = "#35#8#9#"
         
         // WHEN
-        let numberifiedString = testString.numberify(allowsLeadingZeros: false)
+        let numberifiedString = testString.numberize(allowsLeadingZeros: false)
         
         // THEN
         XCTAssertFalse(numberifiedString.contains("#"))
@@ -41,7 +41,7 @@ final class UtilitiesTests: XCTestCase {
         let testString = "#35#8#9#"
         
         // WHEN
-        let numberifiedString = testString.numberify()
+        let numberifiedString = testString.numberize()
         
         // THEN
         XCTAssertFalse(numberifiedString.contains("#"))
@@ -52,7 +52,7 @@ final class UtilitiesTests: XCTestCase {
         let testString = "?35?8?9?"
         
         // WHEN
-        let letterifiedString = testString.letterify()
+        let letterifiedString = testString.letterize()
         
         // THEN
         XCTAssertFalse(letterifiedString.contains("?"))
@@ -63,7 +63,7 @@ final class UtilitiesTests: XCTestCase {
         let testString = "?35#8?9#"
         
         // WHEN
-        let letterifiedNumberifiedString = testString.letterifyAndNumberify()
+        let letterifiedNumberifiedString = testString.letterizeAndNumberize()
         
         // THEN
         XCTAssertFalse(letterifiedNumberifiedString.contains("?"))

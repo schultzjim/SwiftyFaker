@@ -9,10 +9,10 @@ import Foundation
 
 extension SwiftyFaker {
     enum Dessert {
-        static let variety = DessertData.variety.random()
+        static let variety = varietyData.random()
         
-        static let topping = DessertData.topping.random()
+        static let topping = toppingData.random()
         
-        static let flavor = DessertData.flavor.random()
+        static let flavor = flavorData.random()
     }
 }

@@ -9,10 +9,10 @@ import Foundation
 
 extension SwiftyFaker {
     enum Currency {
-        static let name = CurrencyData.name.random()
+        static let name = nameData.random()
         
-        static let code = CurrencyData.code.random()
+        static let code = codeData.random()
         
-        static let symbol = CurrencyData.symbol.random()
+        static let symbol = symbolData.random()
     }
 }

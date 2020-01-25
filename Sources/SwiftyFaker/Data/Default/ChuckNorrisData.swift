@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum ChuckNorrisData {
-    static let fact = [
+extension SwiftyFaker.ChuckNorris {
+    static let factData = [
       "All arrays Chuck Norris declares are of infinite size, because Chuck Norris knows no bounds.",
       "Chuck Norris doesn't have disk latency because the hard drive knows to hurry the hell up.",
       "All browsers support the hex definitions #chuck and #norris for the colors black and blue.",

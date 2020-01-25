@@ -9,22 +9,22 @@ import Foundation
 
 extension SwiftyFaker {
     enum Food {
-        static let dish = FoodData.dish.random()
+        static let dish = dishData.random()
         
-        static let description = FoodData.descriptions.random()
+        static let description = descriptionsData.random()
         
-        static let ingredient = FoodData.ingredients.random()
+        static let ingredient = ingredientsData.random()
         
-        static let fruit = FoodData.fruits.random()
+        static let fruit = fruitsData.random()
 
-        static let vegetable = FoodData.vegetables.random()
+        static let vegetable = vegetablesData.random()
                
-        static let spice = FoodData.spices.random()
+        static let spice = spicesData.random()
         
-        static let measurement = FoodData.measurementSizes.random() + " " + FoodData.measurements.random()
+        static let measurement = measurementSizesData.random() + " " + measurementsData.random()
         
-        static let metricMeasurement = FoodData.metricMeasurements.random()
+        static let metricMeasurement = metricMeasurementsData.random()
         
-        static let sushi = FoodData.sushi.random()
+        static let sushi = sushiData.random()
     }
 }

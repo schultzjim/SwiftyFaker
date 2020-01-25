@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum EducatorData {
-    static let schoolName = [
+extension SwiftyFaker.Educator {
+    static let schoolNameData = [
        "Bluemeadow",
        "Brighthurst",
        "Brookville",
@@ -27,13 +27,13 @@ enum EducatorData {
        "Vertapple"
     ]
     
-    static let secondary = [
+    static let secondaryData = [
        "High",
        "High School",
        "Secondary College"
     ]
     
-    static let subject = [
+    static let subjectData = [
        "Applied Science (Psychology)",
        "Architectural Technology",
        "Arts",
@@ -59,7 +59,7 @@ enum EducatorData {
     ]
     
     enum Tertiary {
-       static let universityType = [
+       static let universityTypeData = [
           "College",
           "TAFE",
           "Technical College",
@@ -67,13 +67,13 @@ enum EducatorData {
        ]
         
        enum Degree {
-          static let type = [
+          static let typeData = [
              "Associate Degree in",
              "Bachelor of",
              "Master of"
           ]
         
-          static let courseNumber = [
+          static let courseNumberData = [
              "1##",
              "2##",
              "3##",

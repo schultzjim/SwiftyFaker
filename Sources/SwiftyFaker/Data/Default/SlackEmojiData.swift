@@ -1,7 +1,7 @@
 import Foundation
 
-enum SlackEmojiData {
-   static let people = [
+extension SwiftyFaker.SlackEmoji {
+   static let peopleData = [
       ":grinning:",
       ":grin:",
       ":joy:",
@@ -139,7 +139,7 @@ enum SlackEmojiData {
       ":pray:"
    ]
     
-   static let nature = [
+   static let natureData = [
       ":seedling:",
       ":evergreen_tree:",
       ":deciduous_tree:",
@@ -267,7 +267,7 @@ enum SlackEmojiData {
       ":sun_with_face:"
    ]
     
-   static let foodAndDrink = [
+   static let foodAndDrinkData = [
       ":tomato:",
       ":eggplant:",
       ":corn:",
@@ -328,7 +328,7 @@ enum SlackEmojiData {
       ":baby_bottle:"
    ]
     
-   static let celebration = [
+   static let celebrationData = [
       ":ribbon:",
       ":gift:",
       ":birthday:",
@@ -370,7 +370,7 @@ enum SlackEmojiData {
       ":blue_heart:"
    ]
     
-   static let activity = [
+   static let activityData = [
       ":running:",
       ":walking:",
       ":dancer:",
@@ -426,7 +426,7 @@ enum SlackEmojiData {
       ":roller_coaster:"
    ]
     
-   static let travelAndPlaces = [
+   static let travelAndPlacesData = [
       ":train:",
       ":mountain_railway:",
       ":steam_locomotive:",
@@ -516,7 +516,7 @@ enum SlackEmojiData {
       ":us:"
    ]
     
-   static let objectsAndSymbols = [
+   static let objectsAndSymbolsData = [
       ":watch:",
       ":iphone:",
       ":calling:",
@@ -861,7 +861,7 @@ enum SlackEmojiData {
       ":clock1230:"
    ]
     
-   static let custom = [
+   static let customData = [
       ":beryl:",
       ":bowtie:",
       ":crab:",
@@ -891,12 +891,12 @@ enum SlackEmojiData {
       ":trollface:"
    ]
     
-    static let emoji = [people.random(),
-                        nature.random(),
-                        foodAndDrink.random(),
-                        celebration.random(),
-                        activity.random(),
-                        travelAndPlaces.random(),
-                        objectsAndSymbols.random(),
-                        custom.random()]
+    static let emojiData = [peopleData.random(),
+                        natureData.random(),
+                        foodAndDrinkData.random(),
+                        celebrationData.random(),
+                        activityData.random(),
+                        travelAndPlacesData.random(),
+                        objectsAndSymbolsData.random(),
+                        customData.random()]
 }

@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum GenderData {
-    static let types = [
+extension SwiftyFaker.Gender {
+    static let typesData = [
        "Female",
        "Male",
        "Non-binary",
@@ -19,12 +19,12 @@ enum GenderData {
        "Polygender"
     ]
     
-    static let binaryTypes = [
+    static let binaryTypesData = [
        "Female",
        "Male"
     ]
     
-    static let shortBinaryTypes = [
+    static let shortBinaryTypesData = [
        "f",
        "m"
     ]

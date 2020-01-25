@@ -1,7 +1,7 @@
 import Foundation
 
-enum DeviceData {
-   static let modelName = [
+extension SwiftyFaker.Device {
+   static let modelNameData = [
       "iPhone",
       "iPhone 3G",
       "iPhone 3GS",
@@ -61,7 +61,7 @@ enum DeviceData {
       "Xiaomi Pocophone F1"
    ]
     
-   static let platform = [
+   static let platformData = [
       "Android OS",
       "webOS",
       "iOS",
@@ -79,7 +79,7 @@ enum DeviceData {
       "Windows Phone"
    ]
     
-   static let manufacturer = [
+   static let manufacturerData = [
       "Dell",
       "HP",
       "ASUS",
@@ -91,7 +91,7 @@ enum DeviceData {
       "Xiamomi"
    ]
     
-   static let serial = [
+   static let serialData = [
       "pEekWH7zGxVITv6NTa5KHjLSwr5Ie4",
       "UVr864F8zUbyYOAUd4cFOW9hpsZuGn",
       "Kl2ZroV9a",

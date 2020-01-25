@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum HitchhikersGuideToTheGalaxyData {
-    static let characters = [
+extension SwiftyFaker.HitchhikersGuideToTheGalaxy {
+    static let charactersData = [
         "Agda",
         "Agrajag",
         "Arthur Dent",
@@ -75,7 +75,7 @@ enum HitchhikersGuideToTheGalaxyData {
         "Zarquon"
     ]
     
-    static let locations = [
+    static let locationsData = [
         "29 Arlington Avenue",
         "Arthur Dent's house",
         "Asbleg",
@@ -132,7 +132,7 @@ enum HitchhikersGuideToTheGalaxyData {
         "Ziggie's Den of Iniquity"
     ]
     
-    static let marvinQuote = [
+    static let marvinQuoteData = [
         "Life? Don't talk to me about life.",
         "Here I am, brain the size of a planet, and they tell me to take you up to the bridge. Call that job satisfaction? 'Cos I don't.",
         "I think you ought to know I'm feeling very depressed.",
@@ -144,7 +144,7 @@ enum HitchhikersGuideToTheGalaxyData {
         "And then of course I've got this terrible pain in all the diodes down my left side."
     ]
     
-    static let planets = [
+    static let planetsData = [
         "Allosimanius Syneca",
         "Argabuthon",
         "Arkintoofle Minor",
@@ -190,7 +190,7 @@ enum HitchhikersGuideToTheGalaxyData {
         "Xaxis"
     ]
     
-    static let quotes = [
+    static let quotesData = [
         "Earth: Mostly Harmless",
         "Whatever your tastes, Magrathea can cater for you. We are not proud.",
         "But Mr. Dent, the plans have been available in the local planning office for the last nine months.",
@@ -217,9 +217,9 @@ enum HitchhikersGuideToTheGalaxyData {
         "42"
     ]
     
-    static let species = ["Algolian Suntiger", "Arcturan MegaDonkey", "Arcturan Megagrasshopper", "Azgoths of Kria", "Babel Fish", "Belcerebon", "Boghog", "Cow", "Damogran Frond Crested Eagle", "Dentrassis", "Dolphins", "Flaybooz", "Golgafrinchan", "Grebulon", "Grebulons", "Hingefreel", "Hooloovoo", "Human", "Jatravartid", "Mattress", "Mice", "Mouse", "Nanites", "Perfectly Normal Beast", "Ravenous Bugblatter Beast of Traal", "Sarkopsi", "Shaltanac", "Silastic Armorfiends", "Silver Tongued Devils", "Vl'Hurg", "Vogon"]
+    static let speciesData = ["Algolian Suntiger", "Arcturan MegaDonkey", "Arcturan Megagrasshopper", "Azgoths of Kria", "Babel Fish", "Belcerebon", "Boghog", "Cow", "Damogran Frond Crested Eagle", "Dentrassis", "Dolphins", "Flaybooz", "Golgafrinchan", "Grebulon", "Grebulons", "Hingefreel", "Hooloovoo", "Human", "Jatravartid", "Mattress", "Mice", "Mouse", "Nanites", "Perfectly Normal Beast", "Ravenous Bugblatter Beast of Traal", "Sarkopsi", "Shaltanac", "Silastic Armorfiends", "Silver Tongued Devils", "Vl'Hurg", "Vogon"]
     
-    static let starships = [
+    static let starshipsData = [
         "Billion Year Bunker",
         "Bistromath",
         "Golgafrinchan Ark Fleet Ship B",
