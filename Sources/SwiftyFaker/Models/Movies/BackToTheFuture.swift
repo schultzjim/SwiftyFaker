@@ -8,11 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum BackToTheFuture {
-        static let character = charactersData.random()
+    public enum BackToTheFuture {
+        public static let character = charactersData.random()
         
-        static let date = datesData.random()
+        public static let date = datesData.random()
         
-        static let quote = quotesData.random()
+        public static let quote = quotesData.random()
     }
 }

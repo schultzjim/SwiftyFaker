@@ -8,19 +8,19 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Device {
-        static let buildNumber = Int.random(in: 1...500)
+    public enum Device {
+        public static let buildNumber = Int.random(in: 1...500)
         
-        static let modelName = modelNameData.random()
+        public static let modelName = modelNameData.random()
         
-        static let platform = platformData.random()
+        public static let platform = platformData.random()
         
-        static let manufacturer = manufacturerData.random()
+        public static let manufacturer = manufacturerData.random()
         
-        static let serial = serialData.random()
+        public static let serial = serialData.random()
         
-        static let versionNumber = Int.random(in: 1...1000)
+        public static let versionNumber = Int.random(in: 1...1000)
         
-        static let semanticVersionNumber = "\(Int.random(in: 0...100)).\(Int.random(in: 0...100)).\(Int.random(in: 0...100))"
+        public static let semanticVersionNumber = "\(Int.random(in: 0...100)).\(Int.random(in: 0...100)).\(Int.random(in: 0...100))"
     }
 }

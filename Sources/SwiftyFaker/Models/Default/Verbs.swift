@@ -8,15 +8,15 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Verbs {
-        static let base = baseData.random()
+    public enum Verbs {
+        public static let base = baseData.random()
         
-        static let past = pastData.random()
+        public static let past = pastData.random()
         
-        static let pastParticiple = pastParticipleData.random()
+        public static let pastParticiple = pastParticipleData.random()
         
-        static let simplePresent = simplePresentData.random()
+        public static let simplePresent = simplePresentData.random()
         
-        static let ingForm = ingFormData.random()
+        public static let ingForm = ingFormData.random()
     }
 }

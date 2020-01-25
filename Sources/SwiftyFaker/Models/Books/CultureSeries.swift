@@ -8,17 +8,17 @@
 import Foundation
 
 extension SwiftyFaker.Books {
-    enum CultureSeries {
-        static let book = booksData.random()
+    public enum CultureSeries {
+        public static let book = booksData.random()
         
-        static let cultureShip = cultureShipsData.random()
+        public static let cultureShip = cultureShipsData.random()
         
-        static let cultureShipClass = cultureShipClassesData.random()
+        public static let cultureShipClass = cultureShipClassesData.random()
         
-        static let cultureShipClassAbbreviation = cultureShipClassAbbreviationsData.random()
+        public static let cultureShipClassAbbreviation = cultureShipClassAbbreviationsData.random()
         
-        static let civ = civsData.random()
+        public static let civ = civsData.random()
         
-        static let planet = planetsData.random()
+        public static let planet = planetsData.random()
     }
 }

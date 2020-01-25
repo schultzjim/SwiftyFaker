@@ -8,11 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Game {
-        static let title = titleData.random()
+    public enum Game {
+        public static let title = titleData.random()
         
-        static let genre = genreData.random()
+        public static let genre = genreData.random()
         
-        static let platform = platformData.random()
+        public static let platform = platformData.random()
     }
 }

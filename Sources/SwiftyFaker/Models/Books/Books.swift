@@ -8,7 +8,7 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Books {
+    public enum Books {
         
     }
 }

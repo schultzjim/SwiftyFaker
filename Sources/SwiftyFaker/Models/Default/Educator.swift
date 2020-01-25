@@ -8,17 +8,17 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Educator {
-        static let university = "\(schoolNameData.random()) \(Tertiary.universityTypeData.random())"
+    public enum Educator {
+        public static let university = "\(schoolNameData.random()) \(Tertiary.universityTypeData.random())"
         
-        static let degree = "\(Tertiary.Degree.typeData.random()) \(subjectData.random())"
+        public static let degree = "\(Tertiary.Degree.typeData.random()) \(subjectData.random())"
         
-        static let subject = subjectData.random()
+        public static let subject = subjectData.random()
         
-        static let courseName = "\(subjectData.random()) \(Tertiary.Degree.courseNumberData.random())".numberize()
+        public static let courseName = "\(subjectData.random()) \(Tertiary.Degree.courseNumberData.random())".numberize()
         
-        static let secondarySchool = "\(schoolNameData.random()) \(secondaryData.random())"
+        public static let secondarySchool = "\(schoolNameData.random()) \(secondaryData.random())"
         
-        static let campus = "\(schoolNameData.random()) Campus"
+        public static let campus = "\(schoolNameData.random()) Campus"
     }
 }

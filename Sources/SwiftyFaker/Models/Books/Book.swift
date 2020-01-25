@@ -9,13 +9,13 @@
 import Foundation
 
 extension SwiftyFaker.Books {
-    enum Book {
-        static let title = titleData.random()
+    public enum Book {
+        public static let title = titleData.random()
         
-        static let author = SwiftyFaker.Name.name
+        public static let author = SwiftyFaker.Name.name
         
-        static let publisher = publisherData.random()
+        public static let publisher = publisherData.random()
         
-        static let genre = genreData.random()
+        public static let genre = genreData.random()
     }
 }

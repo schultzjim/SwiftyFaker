@@ -8,10 +8,10 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Coin {
+    public enum Coin {
         
-        static let name = Currency.name
+        public static let name = Currency.name
         
-        static let flip = ["Heads", "Tails"].random()
+        public static let flip = ["Heads", "Tails"].random()
     }
 }

@@ -11,26 +11,26 @@ import Foundation
 // TODO: Write tests
 
 extension SwiftyFaker {
-    enum Name {
+    public enum Name {
         
-        static let name = namesData.random()
+        public static let name = namesData.random()
         
-        static let nameWithMiddle = namesWithMiddleData.random()
+        public static let nameWithMiddle = namesWithMiddleData.random()
         
-        static let firstName = firstNameData.random()
+        public static let firstName = firstNameData.random()
         
-        static let maleFirstName = maleFirstNameData.random()
+        public static let maleFirstName = maleFirstNameData.random()
         
-        static let masculineName = maleFirstNameData.random()
+        public static let masculineName = maleFirstNameData.random()
         
-        static let femaleFirstName = femaleFirstNameData.random()
+        public static let femaleFirstName = femaleFirstNameData.random()
         
-        static let feminineName = femaleFirstNameData.random()
+        public static let feminineName = femaleFirstNameData.random()
         
-        static let lastName = lastNameData.random()
+        public static let lastName = lastNameData.random()
         
-        static let prefix = prefixData.random()
+        public static let prefix = prefixData.random()
         
-        static let suffix = suffixData.random()
+        public static let suffix = suffixData.random()
     }
 }

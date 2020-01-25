@@ -8,11 +8,11 @@
 import Foundation
 
 extension SwiftyFaker.Creature {
-    enum Cat {
-        static let name = nameData.random()
+    public enum Cat {
+        public static let name = nameData.random()
         
-        static let breed = breedData.random()
+        public static let breed = breedData.random()
         
-        static let registry = registryData.random()
+        public static let registry = registryData.random()
     }
 }

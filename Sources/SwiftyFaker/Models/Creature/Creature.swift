@@ -8,7 +8,7 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Creature {
-        static let hello = "Hello, World!"
+    public enum Creature {
+        public static let hello = "Hello, World!"
     }
 }

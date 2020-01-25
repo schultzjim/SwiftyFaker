@@ -8,9 +8,9 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Appliance {
-        static let brand = brandData.random()
+    public enum Appliance {
+        public static let brand = brandData.random()
         
-        static let equipment = equipmentData.random()
+        public static let equipment = equipmentData.random()
     }
 }

@@ -8,12 +8,12 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Company {
-        static let name = nameData.random()
+    public enum Company {
+        public static let name = nameData.random()
         
-        static let suffix = suffixData.random()
+        public static let suffix = suffixData.random()
         
-        static let industry = industryData.random()
+        public static let industry = industryData.random()
         
         // TODO: Figure this out
 //        static let catchPhrase =
@@ -30,15 +30,15 @@ extension SwiftyFaker {
         // TODO: Figure this out
 //        static let dunsNumber =
         
-        static let logo = "https://pigment.github.io/fake-logos/logos/medium/color/\(Int.random(in: 1...13)).png"
+        public static let logo = "https://pigment.github.io/fake-logos/logos/medium/color/\(Int.random(in: 1...13)).png"
         
-        static let type = typeData.random()
+        public static let type = typeData.random()
         
-        static let profession = professionData.random()
+        public static let profession = professionData.random()
         
         // TODO: A BUNCH TO FIGURE OUT IN HERE
         
-        static let sicCode = sicCodeData.random()
+        public static let sicCode = sicCodeData.random()
     }
 }
 

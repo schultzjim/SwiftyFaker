@@ -8,8 +8,8 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Boolean {
-        static func boolean(trueRatio: Double = 0.5) -> Bool {
+    public enum Boolean {
+        public static func boolean(trueRatio: Double = 0.5) -> Bool {
             return Double.random(in: 0...1) < trueRatio
         }
     }

@@ -8,11 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Dessert {
-        static let variety = varietyData.random()
+    public enum Dessert {
+        public static let variety = varietyData.random()
         
-        static let topping = toppingData.random()
+        public static let topping = toppingData.random()
         
-        static let flavor = flavorData.random()
+        public static let flavor = flavorData.random()
     }
 }

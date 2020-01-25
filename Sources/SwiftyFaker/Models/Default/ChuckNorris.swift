@@ -8,7 +8,7 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum ChuckNorris {
-        static let fact = factData.random()
+    public enum ChuckNorris {
+        public static let fact = factData.random()
     }
 }

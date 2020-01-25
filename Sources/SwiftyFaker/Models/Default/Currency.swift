@@ -8,11 +8,11 @@
 import Foundation
 
 extension SwiftyFaker {
-    enum Currency {
-        static let name = nameData.random()
+    public enum Currency {
+        public static let name = nameData.random()
         
-        static let code = codeData.random()
+        public static let code = codeData.random()
         
-        static let symbol = symbolData.random()
+        public static let symbol = symbolData.random()
     }
 }
